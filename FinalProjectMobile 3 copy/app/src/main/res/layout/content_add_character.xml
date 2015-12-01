@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="10"
+            android:rowCount="34"
+            tools:context=".AddCharacterActivity"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <TextView android:id="@+id/lblName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charName"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/nameField"
+                android:layout_row="1"
+                android:layout_column="2" />
+
+            <TextView android:id="@+id/lblRace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charRace"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/raceField"
+                android:layout_row="2"
+                android:layout_column="2" />
+
+            <TextView android:id="@+id/lblClass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/charClass"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <EditText
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/classField"
+                android:layout_row="3"
+                android:layout_column="2" />
+
+            <TextView
+                android:id="@+id/lblLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att1"
+                android:layout_row="5"
+                android:layout_column="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:id="@+id/btnLvlP"
+                android:layout_row="5"
+                android:layout_column="3"
+                android:onClick="lvlP" />
+
+            <TextView
+                android:id="@+id/lblIntellect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att2"
+                android:layout_row="7"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/intP"
+                android:layout_row="7"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/lvlP"
+                android:layout_row="5"
+                android:layout_column="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="@string/addOp"
+                android:id="@+id/btnIntP"
+                android:layout_row="7"
+                android:layout_column="3"
+                android:onClick="intP"/>
+
+
+            <TextView
+                android:id="@+id/lblVitality"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att3"
+                android:layout_row="8"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/vitP"
+                android:layout_row="8"
+                android:layout_column="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/wilP"
+                android:layout_row="9"
+                android:layout_column="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="@string/addOp"
+                android:id="@+id/btnVitP"
+                android:layout_row="8"
+                android:layout_column="3"
+                android:onClick="vitP"/>
+
+            <TextView
+                android:id="@+id/lblWillpower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att4"
+                android:layout_row="9"
+                android:layout_column="0" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:id="@+id/btnWilP"
+                android:layout_row="9"
+                android:layout_column="3"
+                android:onClick="wilP"/>
+
+            <TextView
+                android:id="@+id/lblStrength"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att5"
+                android:layout_row="10"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/strP"
+                android:layout_row="10"
+                android:layout_column="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:id="@+id/btnStrP"
+                android:layout_row="10"
+                android:layout_column="3"
+                android:onClick="strP"/>
+
+
+            <TextView
+                android:id="@+id/lblLuck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att7"
+                android:layout_row="11"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/lukP"
+                android:layout_row="11"
+                android:layout_column="2" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:id="@+id/btnLukP"
+                android:layout_row="11"
+                android:layout_column="3"
+                android:onClick="lukP"/>
+
+            <TextView
+                android:id="@+id/lblEndurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/att8"
+                android:layout_row="12"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Small Text"
+                android:id="@+id/endP"
+                android:layout_row="12"
+                android:layout_column="2"
+                android:onClick="endP" />
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:text="+"
+                android:id="@+id/btnEndP"
+                android:layout_row="12"
+                android:layout_column="3"
+                android:onClick="endP"/>
+
+            <Button
+                android:id="@+id/btnAddCharacter"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:text="@string/addNewMons"
+                android:onClick="addCharacter"
+                android:layout_row="14"
+                android:layout_column="0" />
+
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="79dp"
+                android:layout_height="match_parent"
+                android:text="@string/canContact"
+                android:onClick="cancel"
+                android:layout_row="14"
+                android:layout_column="1" />
+
+        </GridLayout>
+    </ScrollView>
+</RelativeLayout>

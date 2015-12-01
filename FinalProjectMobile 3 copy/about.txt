@@ -1,0 +1,8 @@
+Title
+Created by: Shaine Perera and Robert de Bruyn
+
+A wonderful adventure game where you, the player, engages in exciting text based combat.
+This game uses the most powerful graphics engine ever, the human imagination!
+Slay deamons and collect sick loot as your character becomes the most powerful champion in the land.
+
+v 1.0

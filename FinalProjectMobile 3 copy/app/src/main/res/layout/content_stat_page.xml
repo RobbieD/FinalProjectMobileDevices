@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_stat_page"
+    tools:context="com.example.rob.finalprojectmobile.StatPage">
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:id="@+id/submitFinal"
+        android:layout_below="@+id/endV"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:onClick="start"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/intV"
+        android:id="@+id/intV"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="58dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/vitV"
+        android:id="@+id/vitV"
+        android:layout_below="@+id/intV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/wilV"
+        android:id="@+id/wilV"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/vitV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/strV"
+        android:id="@+id/strV"
+        android:layout_below="@+id/wilV"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/lukV"
+        android:id="@+id/lukV"
+        android:layout_below="@+id/strV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/endV"
+        android:id="@+id/endV"
+        android:layout_below="@+id/lukV"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/ptsV"
+        android:id="@+id/ptsV"
+        android:layout_above="@+id/intP"
+        android:layout_toRightOf="@+id/strV"
+        android:layout_toEndOf="@+id/strV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/intP"
+        android:layout_alignTop="@+id/intV"
+        android:layout_toRightOf="@+id/submitFinal"
+        android:layout_toEndOf="@+id/submitFinal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/vitP"
+        android:layout_alignTop="@+id/vitV"
+        android:layout_alignLeft="@+id/intP"
+        android:layout_alignStart="@+id/intP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/wilP"
+        android:layout_alignTop="@+id/wilV"
+        android:layout_alignLeft="@+id/vitP"
+        android:layout_alignStart="@+id/vitP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/strP"
+        android:layout_alignTop="@+id/strV"
+        android:layout_alignLeft="@+id/wilP"
+        android:layout_alignStart="@+id/wilP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/lukP"
+        android:layout_alignTop="@+id/lukV"
+        android:layout_alignLeft="@+id/strP"
+        android:layout_alignStart="@+id/strP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/endP"
+        android:layout_alignLeft="@+id/lukP"
+        android:layout_alignStart="@+id/lukP"
+        android:layout_alignBottom="@+id/endV" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/ptsP"
+        android:layout_alignTop="@+id/ptsV"
+        android:layout_alignLeft="@+id/intP"
+        android:layout_alignStart="@+id/intP" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/txtCharNameStat"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnVitP"
+        android:layout_toRightOf="@+id/vitP"
+        android:layout_toEndOf="@+id/vitP"
+        android:layout_marginLeft="26dp"
+        android:layout_marginStart="26dp"
+        android:layout_alignTop="@+id/vitP"
+        android:onClick="vitP"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnWilP"
+        android:layout_alignTop="@+id/wilP"
+        android:layout_alignLeft="@+id/btnVitP"
+        android:layout_alignStart="@+id/btnVitP"
+        android:onClick="wilP"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnStrP"
+        android:layout_alignTop="@+id/strP"
+        android:layout_alignLeft="@+id/btnWilP"
+        android:layout_alignStart="@+id/btnWilP"
+        android:onClick="strP"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnLukP"
+        android:layout_alignTop="@+id/lukP"
+        android:layout_alignLeft="@+id/btnStrP"
+        android:layout_alignStart="@+id/btnStrP"
+        android:layout_alignRight="@+id/btnStrP"
+        android:layout_alignEnd="@+id/btnStrP"
+        android:onClick="lukP"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnEndP"
+        android:layout_alignTop="@+id/endP"
+        android:layout_toRightOf="@+id/endP"
+        android:layout_alignLeft="@+id/btnLukP"
+        android:layout_alignStart="@+id/btnLukP"
+        android:layout_alignRight="@+id/btnStrP"
+        android:layout_alignEnd="@+id/btnStrP"
+        android:onClick="endP"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus"
+        android:id="@+id/btnIntP"
+        android:layout_below="@+id/ptsP"
+        android:layout_alignLeft="@+id/btnVitP"
+        android:layout_alignStart="@+id/btnVitP"
+        android:onClick="intP"/>
+
+</RelativeLayout>

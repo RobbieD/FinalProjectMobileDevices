@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".mobMaker">
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/addNewProd"
+        android:orderInCategory="100"
+        app:showAsAction="never">
+    </item>
+</menu>
